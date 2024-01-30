@@ -1,0 +1,37 @@
+$env:LANG='en-US.UTF-8'
+$env:LC_ALL='en-US.UTF-8'
+#Alias
+Set-Alias vim nvim
+Set-Alias ls ll
+function SSH-edu {
+	ssh -o KexAlgorithms=+diffie-hellman-group-exchange-sha1 -o HostKeyAlgorithms=+ssh-rsa s59079@csv.edu.ie.ariake-nct.ac.jp
+}
+New-Alias -Name ssh2edu -Value SSH-edu
+
+# cd C:\Users\kpp01\Documents\GitHub\tl-dr_AriakeKosen\CNN
+# cd C:\Users\kpp01\Documents\KosenF\Procon34_Kosen-fes
+# cd C:\Users\kpp01\Documents\Atcoder\JOI
+# cd C:\Users\kpp01\Documents\Atcoder
+# cd C:\Users\kpp01\Documents\MineSweeper_SOLVER
+
+#Load prompt config
+# Set-PSReadLineOption -BellStyle None
+# Set-PSReadLineOption -PredictionSource Plugin -PredictionViewStyle ListView
+
+#Icons
+Import-Module -Name Terminal-Icons
+
+# grep
+Set-Alias grep rg
+
+# ll
+# function ll() { lsd -l --blocks permission --blocks size --blocks date --blocks name --blocks inode $args}
+function ll() { lsd -l --blocks name --blocks date --blocks size $args}
+
+# tree
+function tree() { lsd --tree $args}
+
+#Starship
+Invoke-Expression (&starship init powershell)
+
+cls

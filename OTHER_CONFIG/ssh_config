@@ -1,0 +1,10 @@
+# ~/.ssh/.config
+Host xserver
+	HostName sv13172.xserver.jp
+	Port 10022
+	User xs011755
+	ServerAliveInterval 60
+
+HOST edu.ie.ariake-nct.ac.jp
+	KexAlgorithms diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+	HostKeyAlgorithms ssh-dss,ssh-rsa
