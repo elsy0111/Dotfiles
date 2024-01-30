@@ -1,0 +1,10 @@
+{
+	"suggest.languageSourcePriority": 70,
+	"coc.source.clangd.priority": 70,
+	"clangd.priority": 70, 
+  "clangd.fallbackFlags": [
+    "-I/opencv/build/include"
+  ],
+  "snippets.ultisnips.pythonPrompt": false
+}
+
