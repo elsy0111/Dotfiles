@@ -64,6 +64,7 @@ return packer.startup(function(use)
 	use({ "preservim/nerdtree" })
 	use({ "ryanoasis/vim-devicons" })
 	use({ "nvim-tree/nvim-web-devicons" })
+	use({ "github/copilot.vim" })
 
 	-- use({ "cohama/lexima.vim" })
 

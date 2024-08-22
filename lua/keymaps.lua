@@ -32,10 +32,10 @@ keymap("n", "<C-p>", "<Plug>AirlineSelectPrevTab", opts_)
 -- NERD Tree Settings
 keymap("n", "<C-e>", ":NERDTreeToggle<CR>", opts_)
 
-keymap("n", "<F5>", ":w<CR>:!python %<CR>", opts_)
-keymap("i", "<F5>", "<Esc>:w<CR>:!python %<CR>", opts_)
+keymap("n", "<F3>", ":w<CR>:!python %<CR>", opts_)
+keymap("i", "<F3>", "<Esc>:w<CR>:!python %<CR>", opts_)
 keymap("n", "<F4>", ":w<CR>:!processing-java --sketch=C:/Users/kpp01/Documents/Processing/psystem02 --run<CR>", opts_)
 keymap("i", "<F4>", "<Esc>:w<CR>:!processing-java --sketch=C:/Users/kpp01/Documents/Processing/psystem02 --run<CR>", opts_)
 
--- keymap("n", "<F5>", ":w<CR>:!g++ % -o main && main<CR>", opts_)
--- keymap("i", "<F5>", "<Esc>:w<CR>:!g++ % -o main && main<CR>", opts_)
+keymap("n", "<F5>", ":w<CR>:!g++ % -o main && main<CR>", opts_)
+keymap("i", "<F5>", "<Esc>:w<CR>:!g++ % -o main && main<CR>", opts_)
