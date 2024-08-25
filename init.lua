@@ -8,7 +8,7 @@ require("colorscheme")
 
 require("noice_")
 
-vim.cmd [[source C:\Users\kpp01\AppData\Local\nvim\tab-comp.vim]]
+vim.cmd [[source ~/.config/nvim/tab-comp.vim]]
 
 -- require("clangd_")
 -- require("nvim-cmp_")
